@@ -1,0 +1,115 @@
+{
+  "best_model": "Random Forest",
+  "feature_names": [
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V10",
+    "V11",
+    "V12",
+    "V13",
+    "V14",
+    "V15",
+    "V16",
+    "V17",
+    "V18",
+    "V19",
+    "V20",
+    "V21",
+    "V22",
+    "V23",
+    "V24",
+    "V25",
+    "V26",
+    "V27",
+    "V28",
+    "log_Amount",
+    "Hour"
+  ],
+  "results": {
+    "Logistic Regression": {
+      "auc_roc": 0.9702,
+      "pr_auc": 0.7234,
+      "f1_score": 0.105,
+      "precision_fraud": 0.0557,
+      "recall_fraud": 0.9184,
+      "accuracy": 0.9731,
+      "confusion_matrix": [
+        [
+          55338,
+          1526
+        ],
+        [
+          8,
+          90
+        ]
+      ]
+    },
+    "Random Forest": {
+      "auc_roc": 0.9741,
+      "pr_auc": 0.8707,
+      "f1_score": 0.8482,
+      "precision_fraud": 0.871,
+      "recall_fraud": 0.8265,
+      "accuracy": 0.9995,
+      "confusion_matrix": [
+        [
+          56852,
+          12
+        ],
+        [
+          17,
+          81
+        ]
+      ]
+    },
+    "XGBoost": {
+      "auc_roc": 0.9813,
+      "pr_auc": 0.8665,
+      "f1_score": 0.6513,
+      "precision_fraud": 0.5215,
+      "recall_fraud": 0.8673,
+      "accuracy": 0.9984,
+      "confusion_matrix": [
+        [
+          56786,
+          78
+        ],
+        [
+          13,
+          85
+        ]
+      ]
+    },
+    "LightGBM": {
+      "auc_roc": 0.9789,
+      "pr_auc": 0.733,
+      "f1_score": 0.1506,
+      "precision_fraud": 0.0821,
+      "recall_fraud": 0.9082,
+      "accuracy": 0.9824,
+      "confusion_matrix": [
+        [
+          55869,
+          995
+        ],
+        [
+          9,
+          89
+        ]
+      ]
+    }
+  },
+  "dataset_info": {
+    "total_transactions": 284807,
+    "fraud_transactions": 492,
+    "legit_transactions": 284315,
+    "fraud_ratio": 0.1727
+  }
+}
